@@ -1,0 +1,25 @@
+feedback_id,submitted_at,source_channel,user_segment,city,event_type,sentiment,rating_1_5,pain_point,feature_request,willing_to_pay_idr,frequency_events_per_month,priority_hint,feedback_text
+FB-0001,2026-02-02T09:14:00+07:00,play_store,student,jakarta,concert,negative,2,hidden_fee_at_checkout,price_transparency,180000,2,now,Biaya admin muncul di akhir jadi total harga terasa menipu
+FB-0002,2026-02-03T20:41:00+07:00,app_store,young_professional,bandung,festival,mixed,3,poor_event_discovery,advanced_filters,350000,1,now,Sulit cari event sesuai genre dan tanggal akhir pekan
+FB-0003,2026-02-04T18:05:00+07:00,x,music_fan,surabaya,concert,negative,2,ticket_sold_out_too_fast,queue_system,250000,3,now,Tiket habis terlalu cepat bot diduga masih lolos
+FB-0004,2026-02-05T10:22:00+07:00,cs_chat,family,jakarta,theater,mixed,3,unclear_seat_map,improved_seat_map,420000,1,next,Pilih kursi sulit karena map tidak jelas jarak pandang panggung
+FB-0005,2026-02-05T14:10:00+07:00,instagram,student,yogyakarta,standup,negative,2,no_local_payment_method,qris_ewallet_support,120000,2,now,Mau bayar pakai QRIS tapi opsi belum ada
+FB-0006,2026-02-06T12:33:00+07:00,survey,young_professional,jakarta,concert,mixed,3,weak_recommendation,smarter_recommendations,300000,2,next,Rekomendasi event kurang relevan dengan artis yang saya ikuti
+FB-0007,2026-02-07T16:48:00+07:00,email,music_fan,bali,festival,negative,1,late_refund_status,refund_tracking,500000,1,now,Refund belum jelas statusnya sudah lebih dari tujuh hari
+FB-0008,2026-02-08T21:15:00+07:00,play_store,student,semarang,concert,mixed,3,no_waitlist,waitlist_auto_purchase,160000,2,next,Kalau tiket habis saya ingin masuk daftar tunggu otomatis
+FB-0009,2026-02-09T08:09:00+07:00,discord,community_admin,jakarta,festival,positive,4,hard_to_share_plans,in_app_group_planning,280000,2,later,Perlu fitur ajak teman dan voting event di satu room
+FB-0010,2026-02-09T19:52:00+07:00,app_store,young_professional,medan,concert,mixed,3,spam_notifications,notification_preferences,220000,1,next,Notifikasi terlalu sering dan tidak sesuai minat
+FB-0011,2026-02-10T11:04:00+07:00,x,student,jakarta,sports,negative,2,poor_event_discovery,advanced_filters,140000,1,now,Pencarian event olahraga lokal masih berantakan
+FB-0012,2026-02-10T17:28:00+07:00,cs_chat,music_fan,bandung,concert,mixed,3,fraud_concern,verified_seller_badge,260000,2,now,Perlu tanda penjual resmi agar tidak takut tiket palsu
+FB-0013,2026-02-11T13:45:00+07:00,play_store,young_professional,jakarta,workshop,positive,4,bad_search_filters,advanced_filters,310000,1,next,Filter topik workshop sudah lumayan tapi perlu tambah level harga
+FB-0014,2026-02-12T09:40:00+07:00,survey,family,surabaya,theater,mixed,3,language_mismatch,bahasa_indonesia_content,380000,1,later,Deskripsi event campur bahasa jadi sulit dipahami orang tua
+FB-0015,2026-02-12T22:06:00+07:00,instagram,student,makassar,concert,negative,2,slow_checkout,checkout_performance,170000,2,now,Checkout lambat saat jam rilis tiket besar
+FB-0016,2026-02-13T15:12:00+07:00,app_store,music_fan,jakarta,festival,mixed,3,duplicate_event_listing,deduplicate_events,330000,1,next,Event yang sama muncul dua kali dengan jam berbeda
+FB-0017,2026-02-14T10:31:00+07:00,email,event_organizer,jakarta,festival,mixed,3,poor_customer_support,organizer_support_sla,0,0,next,Tim organizer butuh kanal support yang lebih cepat saat hari H
+FB-0018,2026-02-14T18:57:00+07:00,cs_chat,young_professional,batam,concert,negative,2,hidden_fee_at_checkout,price_transparency,210000,1,now,Ingin total harga final terlihat sejak awal pencarian
+FB-0019,2026-02-15T20:19:00+07:00,x,student,jakarta,standup,mixed,3,weak_recommendation,smarter_recommendations,110000,2,next,Saya sering dapat rekomendasi kota lain yang tidak bisa saya datangi
+FB-0020,2026-02-16T07:55:00+07:00,discord,community_admin,bandung,music_meetup,positive,4,hard_to_share_plans,in_app_group_planning,90000,3,later,Fitur planning bareng komunitas akan bantu penjualan grup
+FB-0021,2026-02-17T12:22:00+07:00,play_store,student,palembang,concert,negative,2,no_local_payment_method,qris_ewallet_support,150000,1,now,Pembayaran idealnya mendukung semua ewallet populer
+FB-0022,2026-02-18T16:40:00+07:00,survey,family,jakarta,theater,mixed,3,unclear_seat_map,improved_seat_map,450000,1,next,Perlu preview sudut pandang kursi sebelum beli
+FB-0023,2026-02-19T14:03:00+07:00,instagram,event_organizer,surabaya,concert,mixed,3,duplicate_event_listing,organizer_listing_validation,0,0,next,Listing ganda bikin bingung pembeli dan ganggu konversi
+FB-0024,2026-02-20T21:34:00+07:00,app_store,music_fan,jakarta,festival,positive,5,poor_event_discovery,wishlist_price_alert,400000,2,next,Kalau ada alert harga turun untuk festival saya pasti aktif lagi

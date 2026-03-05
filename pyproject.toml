@@ -1,0 +1,32 @@
+[project]
+name = "agentic-basic"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "celery>=5.6.2",
+    "fastapi>=0.135.0",
+    "openai>=2.24.0",
+    "pydantic>=2.12.5",
+    "pydantic-settings>=2.13.1",
+    "python-dotenv>=1.2.2",
+    "redis>=7.2.1",
+    "ruff>=0.15.4",
+    "scalar-fastapi>=1.6.2",
+    "uvicorn>=0.41.0",
+    "watchfiles>=1.1.1",
+]
+
+
+[dependency-groups]
+dev = [
+  "ruff>=0.15.0",
+]
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I"]
+exclude = ["alembic"]
