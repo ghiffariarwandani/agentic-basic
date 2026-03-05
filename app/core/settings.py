@@ -9,6 +9,7 @@ load_dotenv()
 class Settings(BaseSettings):
     app_name: str = "FastAPI Application"
     version: str = "1.0.0"
+    TAVILY_API_KEY: str = os.getenv("TAVILY_API_KEY")
     OPENROUTER_API_KEY: str = os.getenv("OPENROUTER_API_KEY")
 
 

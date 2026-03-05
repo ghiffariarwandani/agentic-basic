@@ -10,6 +10,9 @@ app = FastAPI(title=settings.app_name)
 
 @app.post("/")
 def submit_insight_request(insight_request: InsightRequest):
+    if len(insight_request.prompt_text) == 0:
+        return {"message": "No prompt text provided!"}
+
     run_insight_task.delay(insight_request.prompt_text)
     return {"message": "Processing!"}
 
