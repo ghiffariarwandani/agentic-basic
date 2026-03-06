@@ -4,7 +4,7 @@ from pathlib import Path
 from app.utils.openai import oa_client
 from app.utils.tavily import tavily_client
 
-from .prompts import SYNTHESIZE_PROMPT
+from .prompts import OUTPUT_PROMPT, SYNTHESIZE_PROMPT
 from .schema import InsightResult, KeywordSchema, StructuredContext
 
 csv_path = Path("app/__mock__/feedback.csv")
@@ -58,7 +58,7 @@ def research_keyword(keyword: str):
     trends = tavily_client.search(
         query=keyword,
         search_depth="advanced",
-        max_results=3,
+        max_results=1,
         start_date="2026-01-01",
         end_date="2026-03-03",
         country="indonesia",
@@ -108,6 +108,18 @@ def synthesize_insights(context: StructuredContext, feedback: list[dict], trends
     return parsed
 
 
-def generate_insight():
-    insight = {}
-    return insight
+def generate_insight(prompt_text: str, synthesized_insight: InsightResult):
+    result = oa_client.chat.completions.create(
+        model="google/gemini-2.5-flash-lite",
+        messages=[
+            {
+                "role": "system",
+                "content": OUTPUT_PROMPT,
+            },
+            {
+                "role": "user",
+                "content": f"Context: {prompt_text}, Synthesized Insight: {synthesized_insight}",
+            },
+        ],
+    )
+    return result.choices[0].message.content

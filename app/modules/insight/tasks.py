@@ -1,5 +1,16 @@
+from datetime import datetime
+
+from fpdf import FPDF
+from markdown import markdown
+
 from app.celery import celery_app
-from app.modules.insight.methods import get_feedback, parse_prompt_to_context, research_keyword, synthesize_insights
+from app.modules.insight.methods import (
+    generate_insight,
+    get_feedback,
+    parse_prompt_to_context,
+    research_keyword,
+    synthesize_insights,
+)
 
 
 def run_insight(prompt_text: str):
@@ -12,10 +23,15 @@ def run_insight(prompt_text: str):
         trends.append(result)
 
     synthesized_insight = synthesize_insights(structured, feedback, trends)
+    research_result = generate_insight(prompt_text, synthesized_insight)
 
-    print("Synthesized Insight:", synthesized_insight)  # Debug print
-
-    return {"message": f"This is an insight task for prompt {feedback} {trends}"}
+    now = datetime.now()
+    result = markdown(text=research_result, output_format="html")
+    pdf = FPDF()
+    pdf.set_auto_page_break(auto=True, margin=12)
+    pdf.add_page()
+    pdf.write_html(result)
+    pdf.output(f"research-{now}.pdf")
 
 
 @celery_app.task(name="insight_task")
